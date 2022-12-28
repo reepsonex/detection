@@ -230,7 +230,7 @@ def train_fusion(num=0, logger=None):
 
 
     dataloader, dataset = create_dataloader(train_path, 640, 16, gs,
-                                            hyp=hyp, augment=True, prefix=colorstr('train: '), split='fusion')
+                                            hyp=hyp, augment=True, prefix=colorstr('train: '), split='none')
     print("the training dataset is length:{}".format(train_dataset.length))
     train_loader = DataLoader(
         dataset=train_dataset,
